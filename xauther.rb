@@ -21,7 +21,7 @@ module XAuth
             form.click_button
         end
 
-        (agent.page/'div[@id="oauth_pin"]')[0].text.to_i
+        (agent.page/'div[@id="oauth_pin"]')[0].text
     end
 
 end
