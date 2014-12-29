@@ -17,7 +17,7 @@ begin
     system "stty echo"
 end
 
-consumer = OAuth::Consumer.new(consumerkey, consumersecret, site: "https://oauth.twitter.com")
+consumer = OAuth::Consumer.new(consumerkey, consumersecret, site: "https://api.twitter.com")
 access_token = consumer.get_request_token.xauth(id,pw)
 
 puts access_token.token, access_token.secret
